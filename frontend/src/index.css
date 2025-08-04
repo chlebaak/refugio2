@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cinzel+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400;700&display=swap');@import "tailwindcss";
+
+
+/* Základní nastavení pro běžný text */
+* {
+  font-family: "Fauna One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Nadpisy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+}
+
+/* Speciální styly pro navbar */
+.restaurant-name {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.logo-letter {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+}
+
+.restaurant-tagline {
+  font-family: "Fauna One", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+/* Navigační prvky */
+nav a, button, .nav-item {
+  font-family: "Fauna One", sans-serif;
+  font-weight: 700;
+}
+
+/* Speciální efekty */
+.text-shadow-sm {
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Stylování pro zvýraznění textu */
+.font-accent {
+  font-family: "Fauna One", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
