@@ -17,7 +17,7 @@ import {
   Heart,
   ExternalLink
 } from 'lucide-react';
-import Logo from '../assets/logorefugio.png';
+import Logo from '../assets/logorefugio2.png';
 
 
 const Footer = ({ isVisible = true }) => {
