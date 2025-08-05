@@ -1,10 +1,273 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="src/assets/logorefugio2.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    
+    <!-- Základní SEO meta tagy -->
+    <title>Refugio Tisá - Restaurace, Kavárna, Ubytování a Lezecký obchod | Nahe Tyssaer Wände</title>
+    <meta name="description" content="Navštivte Refugio v Tisé - unikátní místo s restaurací, kavárnou, pohodlným ubytováním a specializovaným obchodem s lezeckým vybavením přímo u Tiských stěn (Tyssaer Wände). Ideální zázemí pro lezce, turisty i rodiny." />
+    <meta name="keywords" content="Refugio Tisá, restaurace Tisá, ubytování Tiské stěny, lezecký obchod, kavárna Tisá, lezení Tiské stěny, Tyssaer Wände, Tyssaer Felsenstadt, Restaurant Tissa, Unterkunft Tissa, Klettergeschäft, horolezectví, turistika Česko-Saské Švýcarsko, Böhmische Schweiz, Sächsische Schweiz" />
+    <meta name="author" content="Refugio Tisá" />
+    
+    <!-- Open Graph meta tagy pro sdílení na sociálních sítích -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.refugiotisa.cz/" />
+    <meta property="og:title" content="Refugio Tisá - Restaurace, Kavárna, Ubytování a Lezecký obchod | Nahe Tyssaer Wände" />
+    <meta property="og:description" content="Unikátní místo s restaurací, kavárnou, ubytováním a lezeckým obchodem u Tiských stěn (Tyssaer Wände). Perfektní základna pro lezce, turisty i rodiny." />
+    <meta property="og:image" content="https://www.refugiotisa.cz/src/assets/refugio-social-image.jpg" />
+    <meta property="og:image:alt" content="Refugio Tisá - pohled na restauraci a ubytování | Restaurant und Unterkunft" />
+    <meta property="og:site_name" content="Refugio Tisá" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    
+    <!-- Twitter Card meta tagy -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Refugio Tisá - Restaurace, Kavárna, Ubytování a Lezecký obchod | Nahe Tyssaer Wände" />
+    <meta name="twitter:description" content="Unikátní místo s restaurací, kavárnou, ubytováním a lezeckým obchodem u Tiských stěn (Tyssaer Wände). Perfektní základna pro lezce, turisty i rodiny." />
+    <meta name="twitter:image" content="https://www.refugiotisa.cz/src/assets/refugio-social-image.jpg" />
+    
+    <!-- Geo meta tagy pro lokální SEO -->
+    <meta name="geo.region" content="CZ-US" />
+    <meta name="geo.placename" content="Tisá" />
+    <meta name="geo.position" content="50.7977428N, 14.0449894E" />
+    <meta name="ICBM" content="50.7977428, 14.0449894" />
+    
+    <!-- Kanonická URL adresa -->
+    <link rel="canonical" href="https://www.refugiotisa.cz/" />
+    
+    <!-- Alternativní jazykové verze - s důrazem na německou verzi -->
+    <link rel="alternate" hreflang="cs" href="https://www.refugiotisa.cz/" />
+    <link rel="alternate" hreflang="de" href="https://www.refugiotisa.cz/de/" />
+    <link rel="alternate" hreflang="en" href="https://www.refugiotisa.cz/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.refugiotisa.cz/" />
+    
+    <!-- Favicon a Apple touch icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/src/assets/safari-pinned-tab.svg" color="#5E3920" />
+    <meta name="msapplication-TileColor" content="#5E3920" />
+    <meta name="theme-color" content="#F5EFE0" />
+    
+    <!-- Strukturovaná data pro Google (Rich Snippets) - rozšířeno o němčinu -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Refugio Tisá",
+      "alternateName": ["Refugio Tisa", "Refugio Tyssaer Wände", "Restaurant Refugio", "Unterkunft Refugio"],
+      "image": "https://www.refugiotisa.cz/src/assets/refugio-exterior.jpg",
+      "@id": "https://www.refugiotisa.cz",
+      "url": "https://www.refugiotisa.cz",
+      "telephone": "+420702017774",
+      "email": "refugio@seznam.cz",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tisá 428",
+        "addressLocality": "Tisá",
+        "postalCode": "40336",
+        "addressCountry": "CZ",
+        "addressRegion": "Ústecký kraj"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.7977428,
+        "longitude": 14.0449894
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Wednesday", "Thursday", "Friday"],
+          "opens": "11:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday"],
+          "opens": "10:00",
+          "closes": "23:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Sunday"],
+          "opens": "10:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday"],
+          "opens": "00:00",
+          "closes": "00:00",
+          "description": "Zavřeno"
+        }
+      ],
+      "department": [
+        {
+          "@type": "Restaurant",
+          "name": "Restaurace Refugio",
+          "description": "Restaurace nabízející tradiční českou i mezinárodní kuchyni s důrazem na kvalitní lokální suroviny."
+        },
+        {
+          "@type": "LodgingBusiness",
+          "name": "Ubytování Refugio",
+          "description": "Pohodlné ubytování s výhledem na Tiské stěny, ideální pro lezce i turisty."
+        },
+        {
+          "@type": "Store",
+          "name": "Lezecký obchod Refugio",
+          "description": "Specializovaný obchod s lezeckým a horolezeckým vybavením."
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Služby",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Restaurace a kavárna",
+              "description": "Kvalitní jídla, dezerty, káva a nápoje"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ubytování",
+              "description": "Komfortní pokoje pro jednotlivce i skupiny"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Lezecký obchod",
+              "description": "Prodej a půjčovna lezeckého vybavení"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Informační centrum",
+              "description": "Informace o lezeckých cestách a turistických trasách"
+            }
+          }
+        ]
+      },
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "WLAN",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification", 
+          "name": "Parkplatz",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Terrasse",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Vegetarische Gerichte",
+          "value": true
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 50.7977428,
+            "longitude": 14.0449894
+          },
+          "geoRadius": 50000,
+          "description": "Tisá, Tyssaer Wände, Sächsische Schweiz, Böhmische Schweiz, Elbe-Sandsteingebirge"
+        }
+      ],
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.refugiotisa.cz/rezervace",
+          "inLanguage": ["cs", "de", "en"],
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/IOSPlatform",
+            "http://schema.org/AndroidPlatform"
+          ]
+        },
+        "result": {
+          "@type": "Reservation",
+          "name": "Rezervace stolu nebo ubytování"
+        }
+      }
+    }
+    </script>
+
+    <!-- Doplňující strukturovaná data speciálně pro německé návštěvníky -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      "name": "Refugio bei Tyssaer Wände",
+      "description": "Refugio ist eine gemütliche Gaststätte, Café, Unterkunft und Klettershop direkt bei den Tyssaer Wänden (Tiské stěny), nur 20 Minuten von der deutschen Grenze entfernt.",
+      "url": "https://www.refugiotisa.cz/de/",
+      "isAccessibleForFree": true,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tisá 428",
+        "addressLocality": "Tisá",
+        "postalCode": "40336",
+        "addressCountry": "Tschechische Republik",
+        "addressRegion": "Ústí nad Labem Region"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.7977428,
+        "longitude": 14.0449894
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Montag", "Mittwoch", "Donnerstag", "Freitag"],
+          "opens": "11:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Samstag"],
+          "opens": "10:00",
+          "closes": "23:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Sonntag"],
+          "opens": "10:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Dienstag"],
+          "opens": "00:00",
+          "closes": "00:00",
+          "description": "Geschlossen"
+        }
+      ],
+      "touristType": ["Kletterer", "Wanderer", "Naturliebhaber", "Familien"],
+      "availableLanguage": ["Tschechisch", "Deutsch", "Englisch"]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

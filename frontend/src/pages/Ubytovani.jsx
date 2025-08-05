@@ -1054,15 +1054,7 @@ const RoomCard = ({ room, index, activeGallery, setActiveGallery }) => {
               <span>V ceně není zahrnuta snídaně ani lázeňský poplatek.</span>
             </div>
             
-            {/* Rezervační tlačítko */}
-            <motion.button 
-              className="mt-6 w-full py-3.5 bg-[#5E3920] hover:bg-[#5E3920]/90 text-[#F5EFE0] rounded-lg shadow-lg text-base font-bold flex items-center justify-center gap-2 transition-colors"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <CalendarDays size={18} />
-              <span>Rezervovat pobyt</span>
-            </motion.button>
+            
           </div>
         </div>
       </div>
@@ -1169,16 +1161,7 @@ const RoomCardMobile = ({ room, index, activeRoom, setActiveRoom, activeGallery,
           </div>
         </div>
         
-        {/* Rezervační tlačítko */}
-        <motion.button 
-          className="w-full py-3 text-[#F5EFE0] rounded-lg shadow-lg text-base font-bold flex items-center justify-center gap-2"
-          whileHover={{ scale: 1.03 }}
-          whileTap={{ scale: 0.98 }}
-          style={{ backgroundColor: room.color }}
-        >
-          <CalendarDays size={18} />
-          <span>Rezervovat pobyt</span>
-        </motion.button>
+        
         
         {/* Rozbalovací detail */}
         <div className="mt-4 pt-4 border-t border-[#5E3920]/10">

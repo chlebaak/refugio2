@@ -146,7 +146,7 @@ const Footer = ({ isVisible = true }) => {
               variants={fadeInUp}
             >
               <motion.a 
-                href="#"
+                href="https://www.instagram.com/refugio.tisa/"
                 className="group flex items-center justify-center w-11 h-11 rounded-lg bg-[#F5EFE0]/5 hover:bg-[#A87B4D] transition-colors relative overflow-hidden"
                 whileHover={{ y: -3 }}
                 whileTap={{ scale: 0.95 }}
@@ -157,7 +157,7 @@ const Footer = ({ isVisible = true }) => {
               </motion.a>
               
               <motion.a 
-                href="#"
+                href="https://www.facebook.com/refugio.eshop/"
                 className="group flex items-center justify-center w-11 h-11 rounded-lg bg-[#F5EFE0]/5 hover:bg-[#A87B4D] transition-colors relative overflow-hidden"
                 whileHover={{ y: -3 }}
                 whileTap={{ scale: 0.95 }}

@@ -22,7 +22,7 @@ import Ubytovani from '../assets/ubytko.png';
 import img1 from '../assets/img1.jpg';
 import img2 from '../assets/flex2.jpg';
 import img3 from '../assets/b4.jpg';
-import img4 from '../assets/citron.jpg';
+import img4 from '../assets/ilustrace.jpg';
 import img5 from '../assets/tiskesteny.jpg';
 import img6 from '../assets/out.png';
 
@@ -887,8 +887,8 @@ export default function Home() {
             </div>
             <div>
               <h4 className="font-bold text-[#F5EFE0] mb-2 text-lg">Adresa</h4>
-              <p className="text-[#F5EFE0]/90">Skalní 123</p>
-              <p className="text-[#F5EFE0]/90">123 45 Horolezce</p>
+              <p className="text-[#F5EFE0]/90">Tisá 473, Refugio s.r.o.</p>
+              <p className="text-[#F5EFE0]/90">Tisá, 403 36</p>
               <p className="text-[#F5EFE0]/90">Česká republika</p>
             </div>
           </div>
@@ -906,10 +906,10 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-[#F5EFE0] mb-2 text-lg">Kontakt</h4>
               <a href="tel:+420123456789" className="text-[#F5EFE0]/90 hover:text-[#F5EFE0] block transition-colors mb-1">
-                +420 123 456 789
+              +420 702 017 774
               </a>
-              <a href="mailto:info@refugio.cz" className="text-[#F5EFE0]/90 hover:text-[#F5EFE0] block transition-colors">
-                info@refugio.cz
+              <a href="mailto:refugio@seznam.cz" className="text-[#F5EFE0]/90 hover:text-[#F5EFE0] block transition-colors">
+              refugio@seznam.cz
               </a>
             </div>
           </div>
@@ -977,7 +977,7 @@ export default function Home() {
         <h4 className="font-bold text-[#F5EFE0] mb-5 text-lg">Sledujte nás</h4>
         <div className="flex gap-5 justify-around">
           <motion.a 
-            href="#" 
+            href="https://www.instagram.com/refugio.tisa/" 
             className="flex flex-col items-center gap-2"
             whileHover={{ y: -3 }}
           >
@@ -988,7 +988,7 @@ export default function Home() {
           </motion.a>
           
           <motion.a 
-            href="#" 
+            href="https://www.facebook.com/refugio.eshop/" 
             className="flex flex-col items-center gap-2"
             whileHover={{ y: -3 }}
           >
@@ -998,18 +998,7 @@ export default function Home() {
             <span className="text-[#F5EFE0]/80 text-sm">Facebook</span>
           </motion.a>
           
-          <motion.a 
-            href="#" 
-            className="flex flex-col items-center gap-2"
-            whileHover={{ y: -3 }}
-          >
-            <div className="w-14 h-14 bg-[#A87B4D]/20 rounded-xl flex items-center justify-center text-[#F5EFE0] hover:bg-[#A87B4D] transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-              </svg>
-            </div>
-            <span className="text-[#F5EFE0]/80 text-sm">Twitter</span>
-          </motion.a>
+          
         </div>
         
         {/* Dekorativní okraje */}

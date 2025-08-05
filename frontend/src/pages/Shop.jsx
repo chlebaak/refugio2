@@ -16,6 +16,7 @@ import l8 from "../assets/loga/8.png";
 import l9 from "../assets/loga/9.png";
 import l10 from "../assets/loga/10.png";
 import l11 from "../assets/loga/11.png";
+import l12 from "../assets/loga/12.png";
 import shop from "../assets/shop.jpg";
 import equipment from "../assets/equipment.jpg";
 import clothes from "../assets/clothes.jpg";
@@ -116,17 +117,19 @@ export default function Shop() {
   // Seznam značek v obchodě
   // Then replace the brands array with:
 const brands = [
-  { name: "Mammut", logo: l1 },
-  { name: "Black Diamond", logo: l2 },
-  { name: "Petzl", logo: l3 },
+  { name: "Marmot", logo: l1 },
+  { name: "Rockempire", logo: l2 },
+  { name: "LaSportiva", logo: l3 },
   { name: "La Sportiva", logo: l4 },
-  { name: "Patagonia", logo: l5 },
-  { name: "The North Face", logo: l6 },
-  { name: "Scarpa", logo: l7 },
-  { name: "Arc'teryx", logo: l8 },
-  { name: "Salewa", logo: l9 },
+  { name: "Opinel", logo: l5 },
+  { name: "Primus", logo: l6 },
+  { name: "Smartwool", logo: l7 },
+  { name: "Hannah", logo: l8 },
+  { name: "Chillaz", logo: l9 },
   { name: "Ocún", logo: l10 },
-  { name: "Tendon", logo: l11 }
+  { name: "Keen", logo: l11 },
+  { name: "Black Diamond", logo: l12 }
+
 ];
 
   // Funkce pro scrollování na určitou sekci
@@ -311,7 +314,7 @@ const brands = [
                 {[
                   { icon: <Award size={24} />, title: "Kvalitní značky", text: "Nabízíme pouze ověřené značky a kvalitní produkty" },
                   { icon: <HeartHandshake size={24} />, title: "Odborné poradenství", text: "Náš tým tvoří zkušení horolezci a outdooroví nadšenci" },
-                  { icon: <Clock size={24} />, title: "Otevřeno denně", text: "Navštivte nás každý den od 9:00 do 18:00" },
+                  { icon: <Clock size={24} />, title: "Otevřeno denně kromě úterý", text: "Navštivte nás každý den od 9:00 do 18:00" },
                   { icon: <Users size={24} />, title: "Kurzy a workshopy", text: "Pravidelně pořádáme workshopy a přednášky" }
                 ].map((item, index) => (
                   <motion.div 
@@ -342,11 +345,11 @@ const brands = [
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <p className="text-[#5E3920]/80 mb-1">Refugio Outdoor Shop</p>
-                    <p className="text-[#5E3920]/80 mb-1">Horská 1234</p>
-                    <p className="text-[#5E3920]/80 mb-3">543 21 Vrchlabí</p>
+                    <p className="text-[#5E3920]/80 mb-1">Tisá 473</p>
+                    <p className="text-[#5E3920]/80 mb-3">Tisá, 403 36</p>
                     
-                    <p className="text-[#5E3920]/80 mb-1"><strong>Telefon:</strong> +420 123 456 789</p>
-                    <p className="text-[#5E3920]/80 mb-1"><strong>Email:</strong> shop@refugio.cz</p>
+                    <p className="text-[#5E3920]/80 mb-1"><strong>Telefon:</strong> +420 702 017 774</p>
+                    <p className="text-[#5E3920]/80 mb-1"><strong>Email:</strong> refugio@seznam.cz</p>
                   </div>
                   
                   <div>
@@ -357,12 +360,12 @@ const brands = [
                         <span className="text-[#A87B4D] font-medium">9:00 - 18:00</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-[#5E3920]/80">Sobota</span>
+                        <span className="text-[#5E3920]/80">Sobota - Neděle</span>
                         <span className="text-[#A87B4D] font-medium">9:00 - 16:00</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-[#5E3920]/80">Neděle</span>
-                        <span className="text-[#A87B4D] font-medium">10:00 - 15:00</span>
+                        <span className="text-[#5E3920]/80">Úterý</span>
+                        <span className="text-[#A87B4D] font-medium">Zavřeno</span>
                       </div>
                     </div>
                   </div>
