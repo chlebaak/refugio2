@@ -37,10 +37,8 @@ const Footer = ({ isVisible = true }) => {
     {
       title: "Objevuj",
       links: [
-        { name: "Rezervace", url: "/rezervace" },
-        { name: "Lezecké oblasti", url: "/lezecke-oblasti" },
-        { name: "Fotogalerie", url: "/galerie" },
-        { name: "Náš příběh", url: "/o-nas" }
+        { name: "Lezecké oblasti", url: "https://turistikatisa.cz/wp-content/uploads/2023/05/Mapa-Tiske-steny-CZ-2023.pdf" }
+
       ]
     }
   ];

@@ -85,92 +85,98 @@ export default function Restaurace() {
   // Data pro menu - kategorie jídel a nápojů
   const menuItems = {
     predkrmy: [
-      { name: "Polévky s láskou vařené", description: "Dle denní nabídky", price: "od 65 Kč" },
+      { name: "Polévky s láskou vařené", description: "Dle denní nabídky", price: "od 75 Kč" },
       { name: "Pečivo", description: "Čerstvé pečivo k polévce nebo jen tak", price: "15 Kč" },
       { name: "Vege paštika", description: "Podává se s toustem", price: "95 Kč", isVegetarian: true },
       { name: "Tlačenka s cibulí", description: "150g, chléb z Pekárny Tisá", price: "105 Kč" },
-      { name: "Domácí játrová paštika", description: "S hruškovým chutney a toustem", price: "105 Kč" },
-      { name: "Nakládané sýry", description: "120g (niva, gouda, hermelín), chléb z Pekárny Tisá", price: "145 Kč", isVegetarian: true }
+      { name: "Domácí játrová paštika", description: "S chutney, toast", price: "115 Kč" },
+      { name: "Nakládané sýry", description: "120g (niva, gouda, hermelín), chléb z Pekárny Tisá", price: "155 Kč", isVegetarian: true }
     ],    
     hlavni: [
-      { name: "Hermelín v listovém těstě", description: "S domácí pikantní brusinkovou omáčkou, podávaný na salátových listech", price: "135 Kč", isVegetarian: true },
-      { name: "Bramborové šišky", description: "S anglickou slaninou a zelím, zapečené se sýrem", price: "145 Kč" },
-      { name: "Zapečená brambora", description: "S bylinkovým tvarohem, zeleninový salátek a kukuřičný klas", price: "175 Kč", isVegetarian: true },
-      { name: "Zapečený ovčí sýr v olivovém oleji", description: "S česnekem, cibulkou, olivami a feferonkou, chléb z Pekárny Tisá", price: "175 Kč", isVegetarian: true, isPopular: true },
-      { name: "Bulgurové rizoto", description: "Se sušenými rajčaty, česnekem, kořenovou zeleninou, cuketou, sýr Grana Padano", price: "185 Kč", isVegetarian: true },
-      { name: "Boloňské špagety", description: "Hovězí ragú na červeném víně s kořenovou zeleninou, sýr Grana Padano", price: "195 Kč" },
-      { name: "Kuřecí kari v zeleninové omáčce", description: "S kokosovým mlékem, červenou čočkou, černým sezamem, koriandrem, rýže", price: "245 Kč" },
-      { name: "Ribs žebírka glazovaná bourbonem", description: "Se salátkem Coleslaw, chléb", price: "295 Kč" },
-      { name: "Ryba dle nabídky", description: "S pečenou zeleninou, lahůdkovým bramborem a domácím bylinkovým pestem", price: "365 Kč" }
-    ],   
+      { name: "Hermelín v listovém těstě", description: "S domácí pikantní brusinkovou omáčkou, podávaný na salátových listech", price: "155 Kč", isVegetarian: true },
+      { name: "Bramborové šišky", description: "S anglickou slaninou a zelím, zapečené se sýrem", price: "165 Kč" },
+      { name: "Zapečená brambora", description: "S bylinkovým tvarohem, zeleninový salátek a kukuřičný klas", price: "195 Kč", isVegetarian: true },
+      { name: "Zapečený ovčí sýr v olivovém oleji", description: "S česnekem, cibulkou, olivami a feferonkou, chléb z Pekárny Tisá", price: "195 Kč", isVegetarian: true, isPopular: true },
+      { name: "Bulgurové rizoto", description: "Se sušenými rajčaty, česnekem, kořenovou zeleninou, cuketou, sýr Grana Padano", price: "205 Kč", isVegetarian: true },
+      { name: "Boloňské špagety", description: "Hovězí ragú na červeném víně s kořenovou zeleninou, sýr Grana Padano", price: "215 Kč" },
+      { name: "Kuřecí kari v zeleninové omáčce", description: "S kokosovým mlékem, červenou čočkou, černým sezamem, koriandrem, rýže", price: "275 Kč" },
+      { name: "Ribs žebírka glazovaná bourbonem", description: "Se salátkem Coleslaw, chléb", price: "325 Kč" },
+      { name: "Ryba dle nabídky", description: "S pečenou zeleninou, lahůdkovým bramborem a domácím bylinkovým pestem", price: "395 Kč" }
+    ],
+    salaty: [
+      { name: "Míchaný salát", description: "Variace salátů a sezónní zeleniny, domácí dresink", price: "155 Kč", isVegetarian: true },
+      { name: "Míchaný salát s ovčím sýrem", description: "Variace salátů a sezónní zeleniny, ovčí sýr, olivy, domácí dresink", price: "195 Kč", isVegetarian: true },
+      { name: "Carpaccio z červené řepy", description: "S polníčkem, ovčím sýrem a vlašskými ořechy", price: "155 Kč", isVegetarian: true },
+      { name: "Caesar salát se schwarzwaldskou šunkou", description: "Římský salát, opečená schwarzwaldská šunka, ztracené vejce, hoblinky Grana Padano, caesar dresink a krutony", price: "215 Kč" },
+      { name: "Caesar salát s kuřecím steakem", description: "Římský salát, kuřecí steak, hoblinky Grana Padano, caesar dresink a krutony", price: "215 Kč" }
+    ],
+    detske: [
+      { name: "Kuřecí plátek na bylinkovém másle", description: "S opečeným bramborem, kukuřičným klasem a domácím bylinkovým pestem", price: "165 Kč" },
+      { name: "Boloňské špagety se sýrem Gouda", description: "", price: "165 Kč" },
+      { name: "Šišky na másle s mákem nebo strouhankou", description: "Sypané třtinovým cukrem", price: "105 Kč", isVegetarian: true }
+    ],
     dezerty: [
-      { name: "Palačinka s marmeládou", description: "Šlehačka", price: "65 Kč" },
-      { name: "Palačinka s domácím slaným karamelem a ořechy", description: "Šlehačka", price: "85 Kč" },
-      { name: "Palačinka s borůvkami a kysanou smetanou", description: "Šlehačka", price: "85 Kč", isPopular: true },
-      { name: "Ovocný crumble", description: "", price: "75 Kč" },
-      { name: "Koláč/zákusek", description: "Uvidíte, co jsme pro vás napekli", price: "od 65 Kč" },
-      { name: "Zmrzlinový pohár s horkými malinami", description: "Vanilková zmrzlina (2 kopečky), šlehačka", price: "85 Kč" },
-      { name: "Zmrzlinový pohár se slaným karamelem a ořechy", description: "Vanilková zmrzlina (2 kopečky), šlehačka", price: "85 Kč" },
-      { name: "Zmrzlinový pohár s vaječným likérem", description: "Vanilková zmrzlina (2 kopečky), šlehačka", price: "85 Kč" },
-      { name: "Kopeček vanilkové zmrzliny", description: "", price: "20 Kč" }
+      { name: "Palačinky z bio celozrnné mouky", description: "Sypané mletým třtinovým cukrem", price: "", isVegetarian: true },
+      { name: "Palačinka s marmeládou", description: "Šlehačka", price: "75 Kč", isVegetarian: true },
+      { name: "Palačinka s domácím slaným karamelem a ořechy", description: "Šlehačka", price: "85 Kč", isVegetarian: true },
+      { name: "Palačinka s borůvkami a kysanou smetanou", description: "Šlehačka", price: "95 Kč", isPopular: true, isVegetarian: true },
+      { name: "Ovocný crumble", description: "", price: "85 Kč", isVegetarian: true },
+      { name: "Koláč/zákusek", description: "Uvidíte, co jsme pro vás napekli", price: "od 65 Kč", isVegetarian: true }
     ],    
     kavy: [
-      { name: "Espresso", description: "", price: "45 Kč" },
-      { name: "Espresso lungo", description: "", price: "45 Kč" },
+      { name: "Espresso", description: "", price: "55 Kč" },
+      { name: "Espresso lungo", description: "", price: "55 Kč" },
       { name: "Doppio", description: "", price: "70 Kč" },
-      { name: "Cappuccino", description: "", price: "60 Kč", isPopular: true }, 
-      { name: "Flat white", description: "", price: "80 Kč" },
-      { name: "Vídeňská káva", description: "", price: "75 Kč" },
-      { name: "Café Latte", description: "", price: "70 Kč" },
-      { name: "Turecká káva", description: "", price: "40 Kč" },
-      { name: "Sojové mléko", description: "", price: "15 Kč" }
-    ]
-    ,
+      { name: "Cappuccino", description: "", price: "68 Kč", isPopular: true }, 
+      { name: "Flat white", description: "", price: "88 Kč" },
+      { name: "Vídeňská káva", description: "", price: "78 Kč" },
+      { name: "Latte Macchiato", description: "", price: "78 Kč" },
+      { name: "Turecká káva", description: "", price: "45 Kč" },
+      { name: "Sojové mléko", description: "", price: "18 Kč" }
+    ],
     teple: [
-      { name: "Horká čokoláda", description: "", price: "65 Kč" },
-      { name: "Horká čokoláda s rumem", description: "", price: "85 Kč" },
-      { name: "Horká čokoláda s amarettem", description: "", price: "85 Kč" },
-      { name: "Svařák", description: "", price: "65 Kč" },
-      { name: "Grog", description: "", price: "65 Kč" },
-      { name: "Horká griotka", description: "", price: "65 Kč" },
+      { name: "Horká čokoláda", description: "", price: "75 Kč" },
+      { name: "Horká čokoláda s rumem", description: "", price: "95 Kč" },
+      { name: "Horká čokoláda s amarettem", description: "", price: "95 Kč" },
+      { name: "Svařák", description: "", price: "75 Kč" },
+      { name: "Grog", description: "", price: "75 Kč" },
+      { name: "Horká griotka", description: "", price: "75 Kč" },
       { name: "Horký džus", description: "", price: "65 Kč" },
-      { name: "Čaj z čerstvého zázvoru/máty", description: "", price: "55 Kč" },
-      { name: "Čaje sáčkové – Ahmad", description: "", price: "45 Kč" },
-      { name: "Čaje sypané – dle čajového lístku", description: "", price: "55 Kč" },
-      { name: "Med", description: "", price: "10 Kč" }
-    ]
-    ,
+      { name: "Čaj z čerstvého zázvoru/máty", description: "Med +10 Kč", price: "75 Kč" },
+      { name: "Čaje sáčkové – Ahmad", description: "Med +10 Kč", price: "50 Kč" },
+      { name: "Čaje sypané – dle čajového lístku", description: "Med +10 Kč", price: "65 Kč" }
+    ],
     nealko: [
-      { name: "Džusy Rauch", description: "", price: "50 Kč" },
-      { name: "RC Cola / Vinea / Tonic", description: "0,3l", price: "35 Kč" },
-      { name: "Domácí limonáda", description: "0,5l", price: "55 Kč", isPopular: true },
-      { name: "Kauboy mošt", description: "0,33l", price: "35 Kč" },
-      { name: "Rajec pramenitá voda", description: "0,5l", price: "25 Kč" },
-      { name: "Karafa vody/sody", description: "0,3l", price: "30 Kč" },
-      { name: "Točená Kofola", description: "0,5l", price: "45 Kč" },
-      { name: "Cola / Fanta / Sprite – rozlévané", description: "0,5l", price: "50 Kč" },
-      { name: "Rauch džus – soda", description: "0,5l", price: "55 Kč" },
-      { name: "Rozlévaný džus – soda", description: "0,5l", price: "45 Kč" }
-    ]
-    ,
+      { name: "RC Cola/Vinea/Tonic", description: "0,25l", price: "55 Kč" },
+      { name: "Domácí limonády", description: "0,3l", price: "45 Kč", isPopular: true },
+      { name: "Domácí limonády", description: "0,5l", price: "65 Kč", isPopular: true },
+      { name: "Rajec pramenitá voda", description: "0,33l", price: "40 Kč" },
+      { name: "Korunní minerální voda", description: "0,33l", price: "40 Kč" },
+      { name: "Karafa vody/sody", description: "0,5l", price: "25 Kč" },
+      { name: "Točená Kofola", description: "0,3l", price: "35 Kč" },
+      { name: "Točená Kofola", description: "0,5l", price: "50 Kč" },
+      { name: "Cola/Fanta/Sprite", description: "0,4l", price: "55 Kč" },
+      { name: "Rozlévané džusy", description: "0,4l", price: "65 Kč" },
+      { name: "Džus - soda/voda", description: "0,4l", price: "55 Kč" },
+      { name: "F.H.Prager Kombucha", description: "0,33l", price: "75 Kč" }
+    ],
     alko: [
-      { name: "Klášter 11°", description: "0,3l", price: "30 Kč" },
-      { name: "Klášter 11°", description: "0,5l", price: "45 Kč" },
-      { name: "Falkenštejn 12°", description: "0,3l", price: "40 Kč" },
-      { name: "Falkenštejn 12°", description: "0,5l", price: "55 Kč", isPopular: true },
-      { name: "Plzeň 12° – láhev", description: "0,5l", price: "55 Kč" },
-      { name: "Kozel tmavý – láhev", description: "0,5l", price: "45 Kč" },
-      { name: "Nealkopivo – láhev", description: "0,5l", price: "45 Kč" },
-      { name: "F.H.Prager cider", description: "0,3l", price: "65 Kč" },
-      { name: "Kauboy cider", description: "0,5l", price: "95 Kč" },
-      { name: "Radler", description: "0,3l", price: "35 Kč" },
-      { name: "Radler", description: "0,5l", price: "50 Kč" },
-      { name: "Víno rozlévané", description: "0,1l", price: "30 Kč" },
-      { name: "Vinný střik", description: "0,3l", price: "45 Kč" },
-      { name: "Vinný střik", description: "0,5l", price: "75 Kč" },
-      { name: "Prosecco", description: "0,1l", price: "55 Kč" }
+      { name: "Falkenštejn 11°", description: "0,3l", price: "40 Kč" },
+      { name: "Falkenštejn 11°", description: "0,5l", price: "58 Kč" },
+      { name: "Falkenštejn 12°", description: "0,3l", price: "48 Kč" },
+      { name: "Falkenštejn 12°", description: "0,5l", price: "68 Kč", isPopular: true },
+      { name: "Plzeň 12° – láhev", description: "0,5l", price: "65 Kč" },
+      { name: "Kozel tmavý – láhev", description: "0,5l", price: "55 Kč" },
+      { name: "Nealkopivo – láhev", description: "0,5l", price: "55 Kč" },
+      { name: "F.H.Prager cider", description: "0,33l", price: "85 Kč" },
+      { name: "Radler", description: "0,3l", price: "45 Kč" },
+      { name: "Radler", description: "0,5l", price: "65 Kč" },
+      { name: "Víno rozlévané", description: "0,1l", price: "40 Kč" },
+      { name: "Vinný střik", description: "0,3l", price: "50 Kč" },
+      { name: "Vinný střik", description: "0,5l", price: "85 Kč" },
+      { name: "Prosecco", description: "0,1l", price: "65 Kč" },
+      { name: "Prosecco", description: "0,2l", price: "115 Kč" }
     ]
-    
   };
 
   // Funkce pro scrollování na určitou sekci
@@ -695,10 +701,12 @@ export default function Restaurace() {
   {[
     { id: "predkrmy", icon: <Salad size={16} />, name: "Předkrmy" },
     { id: "hlavni", icon: <UtensilsCrossed size={16} />, name: "Hlavní jídla" },
-    { id: "dezerty", icon: <Pizza size={16} />, name: "Dezerty" },
+    { id: "salaty", icon: <Salad size={16} />, name: "Saláty" },
+    { id: "detske", icon: <UtensilsCrossed size={16} />, name: "Dětská jídla" },
+    { id: "dezerty", icon: <Dessert size={16} />, name: "Dezerty" },
     { id: "kavy", icon: <Coffee size={16} />, name: "Káva" },
     { id: "teple", icon: <AlignJustify size={16} />, name: "Teplé nápoje" },
-    { id: "nealko", icon: <Wine size={16} />, name: "Nealkoholícké nápoje" },
+    { id: "nealko", icon: <Wine size={16} />, name: "Nealkoholické nápoje" },
     { id: "alko", icon: <Beer size={16} />, name: "Alkoholické nápoje" }
   ].map(category => (
     <motion.button 
@@ -719,62 +727,62 @@ export default function Restaurace() {
   ))}
 </motion.div>
           
-          {/* Menu položky */}
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 gap-6"
-            initial="hidden"
-            animate={isVisible.menu ? "visible" : "hidden"}
-            variants={staggerContainer}
-            layout
-          >
-            {menuItems[activeCategory].map((item, index) => (
-              <motion.div 
-                key={index}
-                className="bg-[#F5EFE0] rounded-xl p-4 shadow-lg relative overflow-hidden"
-                variants={fadeIn}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                layout
-              >
-                <div className="flex justify-between gap-4">
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <h4 className="font-bold text-[#5E3920] text-lg">{item.name}</h4>
-                      {item.isPopular && (
-                        <span className="bg-[#A87B4D]/10 text-[#A87B4D] text-xs font-bold py-1 px-2 rounded-full">
-                          Populární
-                        </span>
-                      )}
-                      {item.isVegetarian && (
-                        <span className="bg-[#5E3920]/10 text-[#5E3920] text-xs py-1 px-2 rounded-full flex items-center gap-1">
-                          <LucideVegan size={12} />
-                          Vegetariánské
-                        </span>
-                      )}
-                    </div>
-                    <p className="text-[#5E3920]/70 text-sm mt-1">{item.description}</p>
-                  </div>
-                  <div className="font-bold text-[#A87B4D] whitespace-nowrap">
-                    {item.price}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
+{/* Menu položky */}
+<motion.div 
+  className="grid grid-cols-1 md:grid-cols-2 gap-6"
+  initial="hidden"
+  animate={isVisible.menu ? "visible" : "hidden"}
+  variants={staggerContainer}
+  layout
+>
+  {menuItems[activeCategory].map((item, index) => (
+    <motion.div 
+      key={index}
+      className="bg-[#F5EFE0] rounded-xl p-4 shadow-lg relative overflow-hidden"
+      variants={fadeIn}
+      transition={{ duration: 0.4, delay: index * 0.1 }}
+      whileHover={{ y: -5, transition: { duration: 0.2 } }}
+      layout
+    >
+      <div className="flex justify-between gap-4">
+        <div>
+          <div className="flex items-center gap-2 flex-wrap">
+            <h4 className="font-bold text-[#5E3920] text-lg">{item.name}</h4>
+            {item.isPopular && (
+              <span className="bg-[#A87B4D]/10 text-[#A87B4D] text-xs font-bold py-1 px-2 rounded-full">
+                Populární
+              </span>
+            )}
+            {item.isVegetarian && (
+              <span className="bg-[#5E3920]/10 text-[#5E3920] text-xs py-1 px-2 rounded-full flex items-center gap-1">
+                <LucideVegan size={12} />
+                Vegetariánské
+              </span>
+            )}
+          </div>
+          <p className="text-[#5E3920]/70 text-sm mt-1">{item.description}</p>
+        </div>
+        <div className="font-bold text-[#A87B4D] whitespace-nowrap">
+          {item.price}
+        </div>
+      </div>
+    </motion.div>
+  ))}
+</motion.div>
           
-          {/* Poznámka k menu */}
-          <motion.div 
-            className="mt-10 bg-[#F5EFE0]/5 backdrop-blur-sm p-4 rounded-lg border border-[#F5EFE0]/10 flex items-start gap-3"
-            initial={{ opacity: 0 }}
-            animate={isVisible.menu ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ delay: 0.5 }}
-          >
-            <Info size={20} className="text-[#F5EFE0] shrink-0 mt-0.5" />
-            <div className="text-[#F5EFE0]/80 text-sm">
-              <p>Informace o obsažených alergenech poskytne na vyžádání obsluha. Váha masa je uvedena v syrovém stavu.</p>
-              <p className="mt-1">Ceny zahrnují DPH. Poloviční porce účtujeme na 70% ceny.</p>
-            </div>
-          </motion.div>
+{/* Poznámka k menu */}
+<motion.div 
+  className="mt-10 bg-[#F5EFE0]/5 backdrop-blur-sm p-4 rounded-lg border border-[#F5EFE0]/10 flex items-start gap-3"
+  initial={{ opacity: 0 }}
+  animate={isVisible.menu ? { opacity: 1 } : { opacity: 0 }}
+  transition={{ delay: 0.5 }}
+>
+  <Info size={20} className="text-[#F5EFE0] shrink-0 mt-0.5" />
+  <div className="text-[#F5EFE0]/80 text-sm">
+    <p>Informace o obsažených alergenech poskytne na vyžádání obsluha. </p>
+    <p className="mt-1">Ceny zahrnují DPH. Poloviční porce účtujeme na 70% ceny.</p>
+  </div>
+</motion.div>
         </div>
       </section>
       
