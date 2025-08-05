@@ -167,30 +167,7 @@ const Footer = ({ isVisible = true }) => {
                 <Facebook size={18} className="text-[#F5EFE0]/70 group-hover:text-[#F5EFE0] relative z-10" />
               </motion.a>
               
-              <motion.a 
-                href="#"
-                className="group flex items-center justify-center w-11 h-11 rounded-lg bg-[#F5EFE0]/5 hover:bg-[#A87B4D] transition-colors relative overflow-hidden"
-                whileHover={{ y: -3 }}
-                whileTap={{ scale: 0.95 }}
-                aria-label="YouTube"
-              >
-                <div className="absolute inset-0 bg-gradient-to-tr from-[#FF0000] to-[#CC0000] opacity-0 group-hover:opacity-100 transition-opacity" />
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="18" 
-                  height="18" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
-                  className="text-[#F5EFE0]/70 group-hover:text-[#F5EFE0] relative z-10"
-                >
-                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
-                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
-                </svg>
-              </motion.a>
+              
             </motion.div>
           </motion.div>
           
@@ -334,15 +311,7 @@ const Footer = ({ isVisible = true }) => {
               </Link>
             </div>
             
-            {/* Legal links */}
-            <div className="flex items-center gap-6 text-sm text-[#F5EFE0]/40">
-              <Link to="/zasady-ochrany-osobnich-udaju" className="hover:text-[#F5EFE0]/70 transition-colors">
-                Zásady ochrany osobních údajů
-              </Link>
-              <Link to="/obchodni-podminky" className="hover:text-[#F5EFE0]/70 transition-colors">
-                Obchodní podmínky
-              </Link>
-            </div>
+            
             
             {/* Copyright */}
             <div className="text-[#F5EFE0]/40 text-sm flex items-center gap-2">

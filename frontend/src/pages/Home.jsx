@@ -239,13 +239,7 @@ export default function Home() {
   </motion.button>
 </Link>
               
-              <motion.button 
-                className="px-8 py-3 bg-[#F5EFE0]/20 backdrop-blur-sm border-2 border-[#F5EFE0]/40 text-[#F5EFE0] rounded-full font-bold transition-all hover:bg-[#F5EFE0]/30 shadow-lg"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                Rezervovat místo
-              </motion.button>
+              
             </motion.div>
           </motion.div>
 

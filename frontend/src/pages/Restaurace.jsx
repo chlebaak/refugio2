@@ -449,23 +449,23 @@ export default function Restaurace() {
             
             <div className="space-y-3">
               <div className="flex justify-between items-center border-b border-[#5E3920]/10 pb-3">
-                <span className="text-[#5E3920]/80 font-medium">Pondělí - Pátek</span>
-                <span className="text-[#A87B4D] font-bold">11:00 - 22:00</span>
+                <span className="text-[#5E3920]/80 font-medium">Pátek - Sobota</span>
+                <span className="text-[#A87B4D] font-bold">9:00 - 21:00</span>
               </div>
               <div className="flex justify-between items-center border-b border-[#5E3920]/10 pb-3">
-                <span className="text-[#5E3920]/80 font-medium">Sobota</span>
-                <span className="text-[#A87B4D] font-bold">10:00 - 23:00</span>
+                <span className="text-[#5E3920]/80 font-medium">Neděle - Čtvrtek</span>
+                <span className="text-[#A87B4D] font-bold">9:00 - 22:00</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-[#5E3920]/80 font-medium">Neděle</span>
-                <span className="text-[#A87B4D] font-bold">10:00 - 22:00</span>
+                <span className="text-[#5E3920]/80 font-medium">Úterý</span>
+                <span className="text-[#A87B4D] font-bold">Zavřeno</span>
               </div>
             </div>
 
             <div className="mt-6 pt-4 border-t border-[#5E3920]/10">
               <div className="flex items-center gap-2 text-[#5E3920]/80">
                 <MapPin size={16} className="text-[#A87B4D]" />
-                <span>Tiská 428, 403 36 Tisá</span>
+                <span>Tisá 473, 403 36 Tisá</span>
               </div>
             </div>
           </div>
