@@ -398,7 +398,7 @@ export default function Home() {
                       <Star key={i} size={16} fill="#A87B4D" color="#A87B4D" />
                     ))}
                   </div>
-                  <span className="text-sm font-bold text-[#5E3920]">4.9 / 5.0</span>
+                  <span className="text-sm font-bold text-[#5E3920]">4.7 / 5.0</span>
                   <span className="text-xs text-[#5E3920]/60">na Google</span>
                 </motion.div>
               </motion.div>
